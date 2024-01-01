@@ -23,3 +23,17 @@ p {
   margin: 5px 0 0;
   opacity: 0.9;
 }
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
