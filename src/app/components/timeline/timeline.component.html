@@ -1,0 +1,10 @@
+<section class="timeline">
+  <h2><i class="fas fa-history"></i> Joy's Journey</h2>
+  <div *ngFor="let event of timelineEvents" class="timeline-event">
+    <div class="timeline-date">{{ event.date }}</div>
+    <div class="timeline-content">
+      <h3>{{ event.title }}</h3>
+      <p>{{ event.description }}</p>
+    </div>
+  </div>
+</section>

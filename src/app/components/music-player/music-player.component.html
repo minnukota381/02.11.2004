@@ -1,0 +1,6 @@
+<section class="music-player">
+  <button (click)="toggleMusic()">
+    <i [class]="isPlaying ? 'fas fa-pause' : 'fas fa-play'"></i> {{ isPlaying ? 'Pause Music' : 'Play Music' }}
+  </button>
+  <audio #audioPlayer src="path-to-music-file.mp3" (ended)="isPlaying = false"></audio>
+</section>

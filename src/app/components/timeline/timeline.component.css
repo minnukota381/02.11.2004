@@ -1,0 +1,32 @@
+.timeline {
+  padding: 40px;
+  background: #f9fafb;
+  border-radius: 10px;
+  margin: 20px;
+}
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.timeline-event {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.timeline-date {
+  font-weight: bold;
+  color: #777;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #444;
+}
+.timeline-content p {
+  margin: 5px 0 0;
+  color: #666;
+}
