@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css'],
   standalone: true,
-  imports: [CommonModule], // Add this line
+  imports: [CommonModule],
 })
 export class TimelineComponent {
   timelineEvents = [
@@ -20,6 +20,5 @@ export class TimelineComponent {
       title: 'First Day of School',
       description: 'Joy’s exciting first day at school.',
     },
-    // Add more events here
   ];
 }

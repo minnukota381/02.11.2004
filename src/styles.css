@@ -2,16 +2,16 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 :root {
-  --primary-color: #8b5cf6;
-  --secondary-color: #ddd6fe;
-  --text-color: #4b5563;
-  --background-color: #f3f4f6;
+  --primary-color: #1e1e2f; /* Dark background */
+  --secondary-color: #3a3a4a; /* Darker shade for contrast */
+  --text-color: #ffffff; /* White text for better readability */
+  --background-color: #121212; /* Very dark background */
 }
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom, #f3f4f6, #ede9fe);
+  background: linear-gradient(to bottom, #121212, #1e1e2f);
   color: var(--text-color);
 }
 
