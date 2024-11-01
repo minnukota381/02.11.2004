@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 50px 20px;
-  background-image: linear-gradient(to bottom right, rgba(63, 94, 251, 0.7), rgba(252, 70, 107, 0.7)), url('path-to-background-image.jpg');
+  background-image: linear-gradient(to bottom right, rgba(63, 94, 251, 0.7), rgba(252, 70, 107, 0.7)), url('https://images.squarespace-cdn.com/content/v1/62699b1acd7cf353529a34cf/1677875895475-RKH48O3MCDWAJRTLCA22/Joy+Flowers.png');
   background-size: cover;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
