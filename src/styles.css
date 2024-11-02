@@ -2,10 +2,10 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 :root {
-  --primary-color: #1e1e2f; /* Dark background */
-  --secondary-color: #3a3a4a; /* Darker shade for contrast */
-  --text-color: #ffffff; /* White text for better readability */
-  --background-color: #121212; /* Very dark background */
+  --primary-color: #1e1e2f;
+  --secondary-color: #3a3a4a;
+  --text-color: #ffffff;
+  --background-color: #121212;
 }
 
 body {
