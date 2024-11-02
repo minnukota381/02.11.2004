@@ -7,7 +7,7 @@ This is a tribute webpage dedicated to my beloved daughter, Joy. Born on Novembe
 - **Timeline**: A chronological display of significant moments in Joy's life.
 - **Gallery**: A collection of cherished photographs.
 - **Memories**: A space for sharing personal anecdotes and messages.
-- **Music Player**: Enjoy NCS music that resonates with Joy's spirit.
+- **Music**: A playlist of Joy's favorite songs and a special song dedicated to her.
 
 ## Tech Stack
 
@@ -21,13 +21,13 @@ This is a tribute webpage dedicated to my beloved daughter, Joy. Born on Novembe
 
    ```bash
 
-   git clone https://github.com/yourusername/joys-memorial-webpage.git
+   git clone https://github.com/minnukota381/02.11.2004.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd joys-memorial-webpage
+   cd 02.11.2004
    ```
 
 3. Install the dependencies:
