@@ -1,33 +1,194 @@
 .gallery {
-  padding: 40px;
-  text-align: center;
-  background-color: rgba(30, 30, 47, 0.9); /* Dark background with slight transparency */
-  border-radius: 10px;
-  margin: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  background: linear-gradient(
+    145deg,
+    rgba(20, 20, 35, 0.95),
+    rgba(30, 30, 47, 0.98)
+  );
+  border-radius: 20px;
+  margin: 2rem;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    inset 0 2px 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at top right,
+    rgba(139, 92, 246, 0.05),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.header-line {
+  height: 1px;
+  width: 100px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
 }
 
 h2 {
-  font-size: 2.2rem;
-  color: #ffffff; /* White text for better visibility */
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  font-size: 2.4rem;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+h2 i {
+  color: #8b5cf6;
+  opacity: 0.9;
+  animation: gentle-glow 3s infinite ease-in-out;
 }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.photo-frame {
+  position: relative;
+  border-radius: 12px;
+  padding: 10px;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.3),
+    inset 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.photo-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 4/3;
 }
 
 .photo {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.photo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
+
+.overlay-content {
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.overlay-content i {
+  color: white;
+  font-size: 2rem;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+.photo-frame:hover .photo {
+  transform: scale(1.08);
+}
+
+.photo-frame:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-frame:hover .overlay-content {
+  transform: translateY(0);
+}
+
+@keyframes gentle-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(139, 92, 246, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.8));
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .header-line {
+    width: 60px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* Add smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+.photo-frame {
+  animation: fadeIn 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the fade-in animation for each photo */
+.photo-frame:nth-child(1) { animation-delay: 0.1s; }
+.photo-frame:nth-child(2) { animation-delay: 0.2s; }
+.photo-frame:nth-child(3) { animation-delay: 0.3s; }
+.photo-frame:nth-child(4) { animation-delay: 0.4s; }
+.photo-frame:nth-child(5) { animation-delay: 0.5s; }
