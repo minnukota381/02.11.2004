@@ -1,16 +1,17 @@
 .gallery {
   padding: 40px;
   text-align: center;
-  background-color: #fefefe;
+  background-color: rgba(30, 30, 47, 0.9); /* Dark background with slight transparency */
   border-radius: 10px;
   margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
   font-size: 2.2rem;
-  color: #333;
+  color: #ffffff; /* White text for better visibility */
   margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .photo-grid {
@@ -22,11 +23,11 @@ h2 {
 .photo {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .photo:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
