@@ -1,6 +1,6 @@
 # Joy's Memorial Webpage
 
-This is a tribute webpage dedicated to my beloved daughter, Joy. Born on November 2, 2004, and passed away on December 24, 2018, this site serves as a loving remembrance of her life, capturing memories, music, and more.
+This is a tribute webpage dedicated to Joy. Born on November 2, 2004, this site serves as a loving remembrance of her life, capturing memories, music, and more.
 
 ## Features
 
