@@ -1,27 +1,43 @@
-# Joy
+# Joy's Memorial Webpage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+This is a tribute webpage dedicated to my beloved daughter, Joy. Born on November 2, 2004, and passed away on December 24, 2018, this site serves as a loving remembrance of her life, capturing memories, music, and more.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Timeline**: A chronological display of significant moments in Joy's life.
+- **Gallery**: A collection of cherished photographs.
+- **Memories**: A space for sharing personal anecdotes and messages.
+- **Music Player**: Enjoy NCS music that resonates with Joy's spirit.
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 18**: A powerful front-end framework.
+- **Angular Material**: For a modern UI design.
+- **CSS**: For styling the components.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
 
-## Running unit tests
+   ```bash
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   git clone https://github.com/yourusername/joys-memorial-webpage.git
+   ```
 
-## Running end-to-end tests
+2. Navigate to the project directory:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   cd joys-memorial-webpage
+   ```
 
-## Further help
+3. Install the dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   ng serve --open
+   ```
